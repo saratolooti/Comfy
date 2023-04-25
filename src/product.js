@@ -12,7 +12,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.style.transitionDelay = `${delay}s`;
         entry.target.classList.add("fadeDown");
-        delay += 0.15;
+        delay += 0.13;
       }
     });
   },

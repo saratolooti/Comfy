@@ -368,7 +368,7 @@ footer .main-footer {
 }
 
 @media screen and (max-width: 680px) {
-  .empty-cart {
+  #empty-cart {
     flex-direction: column;
     gap: 1em;
   }
