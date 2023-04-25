@@ -4,6 +4,9 @@ import { create_cartData } from "./main.js";
 const urlParams = new URLSearchParams(window.location.search);
 const objValue = urlParams.get("vl");
 
+/* changing the page title */
+document.title = `Catalog | ${objValue.replace("-", " ")} collections`;
+
 /* Fetching data */
 const productCard_container = document.querySelector("[products-container]");
 const productCard_template = document.querySelector("[product-cards-template]");

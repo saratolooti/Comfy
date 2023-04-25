@@ -187,8 +187,9 @@ header img {
   width: 102px;
 }
 
-.product-list td a {
-  text-decoration: none;
+.product-list td button {
+  background: none;
+  border: none;
   color: var(--dark-brown);
 }
 

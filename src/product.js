@@ -42,6 +42,9 @@ fetch(`https://saratolooti.github.io/modern-furniture-api/db.json`)
       (data) => data.type == product.type
     );
 
+    /* changing the page title */
+    document.title = `${product.name} | Comfy Furniture Online Shop`;
+
     display_product(product);
     img_arr = product.image;
 
@@ -307,3 +310,5 @@ function changeMainImg() {
   let selectedImg_src = this.getAttribute("src");
   main_img.style.background = `url("./${selectedImg_src}") no-repeat center center /contain, #fff`;
 }
+
+onLoadSetCartNumber();
