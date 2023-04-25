@@ -113,17 +113,6 @@ header img {
 }
 
 /* Product List section */
-.animate {
-  opacity: 0;
-  transform: translateY(-50px);
-}
-
-.fadeDown {
-  opacity: 1;
-  transform: translateY(0);
-  transition: transform 1s, opacity 1s;
-}
-
 .cart-container {
   overflow-x: auto;
   margin: 5em 0 3em;
@@ -382,5 +371,9 @@ footer .main-footer {
   .empty-cart {
     flex-direction: column;
     gap: 1em;
+  }
+
+  .cart-total {
+    width: 90%;
   }
 }

@@ -139,23 +139,3 @@ function deleteItemBtn(element, id) {
     }
   });
 }
-
-/* whole page animation on scroll */
-let delay = 0;
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.transitionDelay = `${delay}s`;
-        entry.target.classList.add("fadeDown");
-        delay += 0.15;
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
-
-const animation_elements = document.querySelectorAll("[animate]");
-animation_elements.forEach((el) => observer.observe(el));
-
-/* --------------------------------------------------------------- */

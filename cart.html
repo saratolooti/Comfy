@@ -12,8 +12,6 @@
     />
     <link rel="stylesheet" href="src/style.css" />
 
-    <!-- Scripts  -->
-    <script src="src/cart.js" type="module" defer></script>
     <title>Your Shopping Cart | Comfy Furniture online Shop</title>
   </head>
   <body>
@@ -55,7 +53,7 @@
             </thead>
             <tbody cart-items-container>
               <template cart-item-template>
-                <tr class="animate" animate>
+                <tr>
                   <td>
                     <button delete-item-btn>
                       <svg
@@ -119,7 +117,7 @@
 
         <!-- Cart Total  -->
         <section>
-          <div class="cart-total animate" animate>
+          <div class="cart-total">
             <div>
               <div class="label">Subtotal</div>
               <span id="sub-total">$0</span>
@@ -142,7 +140,7 @@
             </div>
           </div>
 
-          <a href="#" class="to-order-btn animate" animate>To Order</a>
+          <a href="#" class="to-order-btn">To Order</a>
         </section>
       </div>
     </div>
@@ -280,5 +278,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scripts  -->
+    <script src="src/cart.js" type="module"></script>
   </body>
 </html>
