@@ -310,5 +310,3 @@ function changeMainImg() {
   let selectedImg_src = this.getAttribute("src");
   main_img.style.background = `url("./${selectedImg_src}") no-repeat center center /contain, #fff`;
 }
-
-onLoadSetCartNumber();

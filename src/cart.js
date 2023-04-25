@@ -1,5 +1,4 @@
 import { stepper } from "./product.js";
-
 // getting all product items from localstorage
 let items = localStorage.getItem("productsInCart");
 items = JSON.parse(items);
