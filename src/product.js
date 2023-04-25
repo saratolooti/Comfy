@@ -125,7 +125,7 @@ function display_product(data) {
 
   //product detailed info part
   let secondary_img = document.getElementById("secondary-img");
-  secondary_img.style.background = `url("../${data.image[0].size}") no-repeat center center /contain, #fff`;
+  secondary_img.style.background = `url("./${data.image[0].size}") no-repeat center center /contain, #fff`;
 
   let accordion_container = document.querySelector(".accordion-container");
   let accordionHtml = "";
@@ -283,7 +283,7 @@ function productColorChange(btn) {
     subImgs_container.append(img_element);
   }
   // changing main image
-  main_img.style.background = `url("../${selected_imgs["1"]}") no-repeat center center /contain, #fff`;
+  main_img.style.background = `url("./${selected_imgs["1"]}") no-repeat center center /contain, #fff`;
 
   // changing main pic with subpics
   let subImages = document.querySelectorAll(".sub-imgs img");
@@ -297,5 +297,5 @@ function productColorChange(btn) {
 function changeMainImg() {
   let main_img = document.getElementById("main-img");
   let selectedImg_src = this.getAttribute("src");
-  main_img.style.background = `url("../${selectedImg_src}") no-repeat center center /contain, #fff`;
+  main_img.style.background = `url("./${selectedImg_src}") no-repeat center center /contain, #fff`;
 }
