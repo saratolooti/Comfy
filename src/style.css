@@ -195,6 +195,7 @@ header img {
   background: none;
   border: none;
   color: var(--dark-brown);
+  cursor: pointer;
 }
 
 .product-list .color-container {
@@ -231,7 +232,8 @@ header img {
   margin: 0;
 }
 
-.quantity-btn-container button {
+#decrement,
+#increment {
   font-size: 1em;
   background: none;
   cursor: pointer;
