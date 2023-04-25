@@ -40,7 +40,7 @@ function display_header() {
       hsla(240, 14%, 13%, 0.4),
       hsla(240, 14%, 13%, 0.4)
     ),
-    url("../img/${objValue}.png") no-repeat center center / cover`;
+    url("./img/${objValue}.png") no-repeat center center / cover`;
   header_img.textContent = objValue;
 }
 

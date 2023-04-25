@@ -44,6 +44,14 @@ fetch(`https://saratolooti.github.io/modern-furniture-api/db.json`)
 
     display_product(product);
     img_arr = product.image;
+
+    // changing main pic with subpics
+    let subImages = document.querySelectorAll(".sub-imgs img");
+
+    subImages.forEach((img) => {
+      img.addEventListener("click", changeMainImg);
+    });
+
     // creating suggestion section
     suggestion();
     selected_color = product.selected_color;
