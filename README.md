@@ -2,7 +2,7 @@
 
 furniture online shop
 
-[👉🏻have a look here](https://zippy-swan-170b72.netlify.app/)
+[👉🏻have a look here](https://saratolooti.github.io/Comfy/)
 
 #### Built with:
 
