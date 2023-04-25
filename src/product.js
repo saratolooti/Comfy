@@ -103,7 +103,7 @@ function display_product(data) {
   `;
 
   let main_img = document.getElementById("main-img");
-  main_img.style.background = `url("../${data.image[0][1]}") no-repeat center center /contain, #fff`;
+  main_img.style.background = `url("./${data.image[0][1]}") no-repeat center center /contain, #fff`;
 
   // product detail part
   document.querySelector(".price").innerHTML = `$${data.price}`;
