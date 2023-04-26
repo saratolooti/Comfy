@@ -787,6 +787,7 @@ footer .main-footer {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
+  grid-template-rows: repeat(auto-fill, 300px);
   gap: 1.5em;
   margin-bottom: 5em;
 }
@@ -1057,16 +1058,6 @@ footer .main-footer {
   .hero-img::before {
     display: none;
   }
-
-  /* .product-info,
-  .product-container {
-    flex-direction: column;
-  }
-
-  .img-container,
-  .product-detail-container {
-    width: 100%;
-  } */
 }
 
 @media only screen and (max-width: 680px) {
@@ -1091,6 +1082,11 @@ footer .main-footer {
 
   .main-footer > p {
     width: 80%;
+  }
+
+  /* catalog page */
+  .products {
+    grid-template-rows: auto;
   }
 
   /* product page */
